@@ -1,0 +1,53 @@
+<!-- Component: Core Color Swatches -->
+<div class="cf-color-grid">
+  <div class="cf-color-swatch" style="background-color: var(--cf-primary);">
+    <span class="swatch-label">Primary</span>
+    <span class="swatch-code">#4f46e5</span>
+  </div>
+  <div class="cf-color-swatch" style="background-color: var(--cf-secondary);">
+    <span class="swatch-label">Secondary</span>
+    <span class="swatch-code">#64748b</span>
+  </div>
+  <div class="cf-color-swatch" style="background-color: var(--cf-success);">
+    <span class="swatch-label">Success</span>
+    <span class="swatch-code">#10b981</span>
+  </div>
+  <div class="cf-color-swatch" style="background-color: var(--cf-danger);">
+    <span class="swatch-label">Danger</span>
+    <span class="swatch-code">#ef4444</span>
+  </div>
+  <div class="cf-color-swatch" style="background-color: var(--cf-warning);">
+    <span class="swatch-label">Warning</span>
+    <span class="swatch-code">#f59e0b</span>
+  </div>
+  <div class="cf-color-swatch" style="background-color: var(--cf-info);">
+    <span class="swatch-label">Info</span>
+    <span class="swatch-code">#06b6d4</span>
+  </div>
+</div>
+
+<style>
+.cf-color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+}
+.cf-color-swatch {
+  height: 90px;
+  border-radius: var(--cf-radius);
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #ffffff;
+  font-size: 0.75rem;
+  box-shadow: var(--cf-shadow-sm);
+  transition: transform 0.2s ease;
+}
+.cf-color-swatch:hover {
+  transform: translateY(-2px);
+}
+.swatch-label { font-weight: 700; }
+.swatch-code { opacity: 0.85; font-family: monospace; font-size: 0.7rem; }
+</style>

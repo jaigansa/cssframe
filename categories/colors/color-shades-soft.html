@@ -1,0 +1,46 @@
+<!-- Component: Soft Color Shades & Tokens -->
+<div class="cf-shades-list">
+  <div class="cf-shade-item" style="background-color: var(--cf-primary-light); color: var(--cf-primary);">
+    <span>Primary Light</span>
+    <code>var(--cf-primary-light)</code>
+  </div>
+  <div class="cf-shade-item" style="background-color: var(--cf-success-light); color: var(--cf-success);">
+    <span>Success Light</span>
+    <code>var(--cf-success-light)</code>
+  </div>
+  <div class="cf-shade-item" style="background-color: var(--cf-danger-light); color: var(--cf-danger);">
+    <span>Danger Light</span>
+    <code>var(--cf-danger-light)</code>
+  </div>
+  <div class="cf-shade-item" style="background-color: var(--cf-warning-light); color: var(--cf-warning);">
+    <span>Warning Light</span>
+    <code>var(--cf-warning-light)</code>
+  </div>
+  <div class="cf-shade-item" style="background-color: var(--cf-info-light); color: var(--cf-info);">
+    <span>Info Light</span>
+    <code>var(--cf-info-light)</code>
+  </div>
+</div>
+
+<style>
+.cf-shades-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.cf-shade-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1rem;
+  border-radius: var(--cf-radius);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.cf-shade-item code {
+  font-family: monospace;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+</style>

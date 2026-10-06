@@ -1,0 +1,22 @@
+<!-- Component: Avatar & User Group -->
+<div style="display: flex; flex-direction: column; gap: 1rem;">
+  <div style="display: flex; gap: 0.5rem; align-items: center;">
+    <div class="cf-avatar cf-avatar-sm">JD</div>
+    <div class="cf-avatar">MK</div>
+    <div class="cf-avatar cf-avatar-lg">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80" alt="User">
+    </div>
+  </div>
+  <div class="cf-avatar-group">
+    <div class="cf-avatar">AB</div>
+    <div class="cf-avatar">CD</div>
+    <div class="cf-avatar">EF</div>
+    <div class="cf-avatar" style="background: var(--cf-secondary); color: white;">+5</div>
+  </div>
+</div>
+
+<style>
+.cf-avatar { width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; }
+.cf-avatar-group { display: flex; }
+.cf-avatar-group .cf-avatar { margin-left: -0.75rem; border: 2px solid white; }
+</style>

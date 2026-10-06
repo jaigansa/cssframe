@@ -1,0 +1,20 @@
+<!-- Component: Loading Spinner -->
+<div style="display: flex; align-items: center; gap: 1.5rem;">
+  <div class="cf-spinner"></div>
+  <button class="cf-btn cf-btn-primary" disabled>
+    <div class="cf-spinner" style="width: 1rem; height: 1rem; border-width: 2px; border-top-color: white;"></div>
+    Loading...
+  </button>
+</div>
+
+<style>
+.cf-spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid rgba(79, 70, 229, 0.2);
+  border-radius: 50%;
+  border-top-color: var(--cf-primary);
+  animation: cf-spin 0.8s linear infinite;
+}
+@keyframes cf-spin { to { transform: rotate(360deg); } }
+</style>
