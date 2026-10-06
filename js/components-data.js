@@ -1,5 +1,118 @@
 const COMPONENTS_DATA = [
   {
+    id: "accordion-faq",
+    name: "FAQ Accordion List",
+    category: "Accordions",
+    filePath: "categories/accordions/accordion-faq.html",
+    description: "Expandable pure CSS/HTML accordion list for Frequently Asked Questions.",
+    html: `<div class="cf-accordion" style="width: 100%; max-width: 450px;">
+  <div class="cf-accordion-item">
+    <button class="cf-accordion-header">
+      <span>What is CSSFrame?</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="cf-accordion-body">
+      CSSFrame is a lightweight, pure HTML/CSS framework designed for building modern UI interfaces quickly.
+    </div>
+  </div>
+  <div class="cf-accordion-item">
+    <button class="cf-accordion-header">
+      <span>How do I install CSSFrame?</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="cf-accordion-body">
+      Simply include the CDN link tag in your website header: <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jaigansa/cssframe@main/css/cssframe.css"&gt;</code>
+    </div>
+  </div>
+</div>`,
+    css: `.cf-accordion { border: 1px solid var(--cf-border); border-radius: var(--cf-radius); overflow: hidden; background-color: var(--cf-surface); }
+.cf-accordion-item { border-bottom: 1px solid var(--cf-border); }
+.cf-accordion-item:last-child { border-bottom: none; }
+.cf-accordion-header { width: 100%; padding: 1rem 1.25rem; background: none; border: none; display: flex; align-items: center; justify-content: space-between; font-weight: 600; font-size: 0.875rem; color: var(--cf-text); cursor: pointer; }
+.cf-accordion-body { padding: 0 1.25rem 1rem 1.25rem; color: var(--cf-text-muted); font-size: 0.875rem; }`
+  },
+  {
+    id: "card-pricing",
+    name: "Pro Pricing Plan Card",
+    category: "Cards",
+    filePath: "categories/cards/card-pricing.html",
+    description: "Subscription pricing card with price highlight, features list, and call-to-action button.",
+    html: `<div class="cf-card cf-card-hover" style="max-width: 320px; border-color: var(--cf-primary);">
+  <div class="cf-card-header" style="display: flex; justify-content: space-between; align-items: center;">
+    <span>Pro Plan</span>
+    <span class="cf-badge cf-badge-primary">Popular</span>
+  </div>
+  <div class="cf-card-body">
+    <div style="margin-bottom: 1rem;">
+      <span style="font-size: 2rem; font-weight: 700;">$29</span>
+      <span style="color: var(--cf-text-muted); font-size: 0.875rem;">/ month</span>
+    </div>
+    <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.625rem; font-size: 0.875rem; color: var(--cf-text-muted); margin-bottom: 1.5rem;">
+      <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Unlimited Component Downloads</li>
+      <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Unlimited Projects</li>
+      <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Priority AI Prompting</li>
+    </ul>
+    <button class="cf-btn cf-btn-primary" style="width: 100%;">Upgrade to Pro</button>
+  </div>
+</div>`,
+    css: `.cf-card { background: var(--cf-surface); border: 1px solid var(--cf-border); border-radius: var(--cf-radius-lg); }
+.cf-card-hover:hover { transform: translateY(-3px); box-shadow: var(--cf-shadow-lg); }`
+  },
+  {
+    id: "progress-bar",
+    name: "Progress Bar & Indicators",
+    category: "Spinners",
+    filePath: "categories/spinners/progress-bar.html",
+    description: "Rounded progress bar track for loading progress and completion percentages.",
+    html: `<div style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
+  <div>
+    <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem;">
+      <span>Uploading files</span>
+      <span>75%</span>
+    </div>
+    <div class="cf-progress">
+      <div class="cf-progress-bar" style="width: 75%;"></div>
+    </div>
+  </div>
+  <div>
+    <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem;">
+      <span>Task Completed</span>
+      <span>100%</span>
+    </div>
+    <div class="cf-progress">
+      <div class="cf-progress-bar cf-progress-success" style="width: 100%;"></div>
+    </div>
+  </div>
+</div>`,
+    css: `.cf-progress { width: 100%; height: 0.625rem; background-color: var(--cf-secondary-light); border-radius: 9999px; overflow: hidden; }
+.cf-progress-bar { height: 100%; background-color: var(--cf-primary); border-radius: 9999px; }
+.cf-progress-success { background-color: var(--cf-success); }`
+  },
+  {
+    id: "breadcrumbs-nav",
+    name: "Breadcrumb Navigation",
+    category: "Navigation",
+    filePath: "categories/navigation/breadcrumbs.html",
+    description: "Hierarchical link trail breadcrumbs for website navigation paths.",
+    html: `<nav aria-label="Breadcrumb">
+  <ul class="cf-breadcrumb">
+    <li class="cf-breadcrumb-item"><a href="#">Home</a></li>
+    <li class="cf-breadcrumb-item">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="#">Projects</a>
+    </li>
+    <li class="cf-breadcrumb-item active">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>CSSFrame</span>
+    </li>
+  </ul>
+</nav>`,
+    css: `.cf-breadcrumb { display: flex; align-items: center; gap: 0.5rem; list-style: none; font-size: 0.875rem; }
+.cf-breadcrumb-item { color: var(--cf-text-muted); display: flex; align-items: center; gap: 0.5rem; }
+.cf-breadcrumb-item a { color: var(--cf-primary); text-decoration: none; }
+.cf-breadcrumb-item.active { color: var(--cf-text); font-weight: 500; }`
+  },
+  {
     id: "color-swatches",
     name: "Core Color Palette Swatches",
     category: "Colors",

@@ -1,0 +1,38 @@
+<!-- Component: FAQ Accordion -->
+<div class="cf-accordion" style="width: 100%; max-width: 450px;">
+  <div class="cf-accordion-item">
+    <button class="cf-accordion-header">
+      <span>What is CSSFrame?</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="cf-accordion-body">
+      CSSFrame is a lightweight, pure HTML/CSS framework designed for building modern UI interfaces quickly.
+    </div>
+  </div>
+  <div class="cf-accordion-item">
+    <button class="cf-accordion-header">
+      <span>How do I install CSSFrame?</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="cf-accordion-body">
+      Simply include the CDN link tag in your website header: <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jaigansa/cssframe@main/css/cssframe.css"&gt;</code>
+    </div>
+  </div>
+</div>
+
+<style>
+.cf-accordion {
+  border: 1px solid var(--cf-border);
+  border-radius: var(--cf-radius);
+  overflow: hidden;
+  background-color: var(--cf-surface);
+}
+.cf-accordion-item { border-bottom: 1px solid var(--cf-border); }
+.cf-accordion-item:last-child { border-bottom: none; }
+.cf-accordion-header {
+  width: 100%; padding: 1rem 1.25rem; background: none; border: none;
+  display: flex; align-items: center; justify-content: space-between;
+  font-weight: 600; font-size: 0.875rem; color: var(--cf-text); cursor: pointer;
+}
+.cf-accordion-body { padding: 0 1.25rem 1rem 1.25rem; color: var(--cf-text-muted); font-size: 0.875rem; }
+</style>

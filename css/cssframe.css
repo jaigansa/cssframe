@@ -483,3 +483,103 @@ input:checked + .cf-slider:before {
 .cf-nav-link:hover, .cf-nav-link.active {
   color: var(--cf-primary);
 }
+
+/* --- Accordions --- */
+.cf-accordion {
+  border: 1px solid var(--cf-border);
+  border-radius: var(--cf-radius);
+  overflow: hidden;
+  background-color: var(--cf-surface);
+}
+
+.cf-accordion-item {
+  border-bottom: 1px solid var(--cf-border);
+}
+.cf-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.cf-accordion-header {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: var(--cf-font-size-sm);
+  color: var(--cf-text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.cf-accordion-body {
+  padding: 0 1.25rem 1rem 1.25rem;
+  color: var(--cf-text-muted);
+  font-size: var(--cf-font-size-sm);
+}
+
+/* --- Progress Bars --- */
+.cf-progress {
+  width: 100%;
+  height: 0.625rem;
+  background-color: var(--cf-secondary-light);
+  border-radius: var(--cf-radius-full);
+  overflow: hidden;
+}
+
+.cf-progress-bar {
+  height: 100%;
+  background-color: var(--cf-primary);
+  border-radius: var(--cf-radius-full);
+  transition: width 0.3s ease;
+}
+
+.cf-progress-success { background-color: var(--cf-success); }
+.cf-progress-danger { background-color: var(--cf-danger); }
+.cf-progress-warning { background-color: var(--cf-warning); }
+
+/* --- Breadcrumbs --- */
+.cf-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  font-size: var(--cf-font-size-sm);
+}
+
+.cf-breadcrumb-item {
+  color: var(--cf-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cf-breadcrumb-item a {
+  color: var(--cf-primary);
+  text-decoration: none;
+}
+
+.cf-breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.cf-breadcrumb-item.active {
+  color: var(--cf-text);
+  font-weight: 500;
+}
+
+/* --- Grid & Flex Utilities --- */
+.cf-flex { display: flex; }
+.cf-flex-col { flex-direction: column; }
+.cf-items-center { align-items: center; }
+.cf-justify-between { justify-content: space-between; }
+.cf-gap-1 { gap: 0.25rem; }
+.cf-gap-2 { gap: 0.5rem; }
+.cf-gap-3 { gap: 0.75rem; }
+.cf-gap-4 { gap: 1rem; }
+
+.cf-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.cf-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+

@@ -1,0 +1,22 @@
+<!-- Component: Breadcrumbs Navigation -->
+<nav aria-label="Breadcrumb">
+  <ul class="cf-breadcrumb">
+    <li class="cf-breadcrumb-item"><a href="#">Home</a></li>
+    <li class="cf-breadcrumb-item">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      <a href="#">Projects</a>
+    </li>
+    <li class="cf-breadcrumb-item active">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      <span>CSSFrame</span>
+    </li>
+  </ul>
+</nav>
+
+<style>
+.cf-breadcrumb { display: flex; align-items: center; gap: 0.5rem; list-style: none; font-size: 0.875rem; }
+.cf-breadcrumb-item { color: var(--cf-text-muted); display: flex; align-items: center; gap: 0.5rem; }
+.cf-breadcrumb-item a { color: var(--cf-primary); text-decoration: none; }
+.cf-breadcrumb-item a:hover { text-decoration: underline; }
+.cf-breadcrumb-item.active { color: var(--cf-text); font-weight: 500; }
+</style>
